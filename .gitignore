@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /all.txt
+/stop.txt
 /.pnp
 .pnp.js
 
