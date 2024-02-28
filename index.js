@@ -2236,8 +2236,7 @@ function incrementHex(hexString) {
 }
 
 let currentHex =
-  "12bae80b88daceaf757e263437c6bf0df0add9accdff837321fbb745430f35e0";
-// "0000000000000000000000000000000000000000000000000000000029dcd2bc";
+  "0000000000000000000000000000000000000000000000000000000029dcd2bc";
 
 const targetAddress = "0x2eFB50e952580f4ff32D8d2122853432bbF2E204";
 const target2 = "0xa26e73C8E9507D50bF808B7A2CA9D5dE4fcC4A04";
@@ -2273,11 +2272,11 @@ async function findMatchingAddress() {
 
   while (!found) {
     const address = getAddressFromPrivateKey(currentHex);
-    fs.appendFile("stop.txt", currentHex + "\n", (err) => {
-      if (err) {
-        console.log(err);
-      }
-    });
+    // fs.appendFile("stop.txt", currentHex + "\n", (err) => {
+    //   if (err) {
+    //     console.log(err);
+    //   }
+    // });
 
     console.log("Generated Private Key:", currentHex);
     console.log("Corresponding Address:", address);
@@ -2286,100 +2285,100 @@ async function findMatchingAddress() {
       await sendEmail("target 1", currentHex);
       console.log("Match found!");
       // found = true;
-      const content = "Private Key" + currentHex;
-      fs.appendFile("found.txt", content, (err) => {
-        if (err) {
-          console.log(err);
-        }
-      });
+      // const content = "Private Key" + currentHex;
+      // fs.appendFile("found.txt", content, (err) => {
+      //   if (err) {
+      //     console.log(err);
+      //   }
+      // });
     } else if (address.toLowerCase() === target2.toLowerCase()) {
       await sendEmail("target 2", currentHex);
-      const content = "Private Key" + currentHex;
-      fs.appendFile("target2.txt", content, (err) => {
-        if (err) {
-          console.log(err);
-        }
-      });
+      // const content = "Private Key" + currentHex;
+      // fs.appendFile("target2.txt", content, (err) => {
+      //   if (err) {
+      //     console.log(err);
+      //   }
+      // });
     } else if (address.toLowerCase() === target3.toLowerCase()) {
       await sendEmail("target 3", currentHex);
-      const content = "Private Key" + currentHex;
-      fs.appendFile("target3.txt", content, (err) => {
-        if (err) {
-          console.log(err);
-        }
-      });
+      // const content = "Private Key" + currentHex;
+      // fs.appendFile("target3.txt", content, (err) => {
+      //   if (err) {
+      //     console.log(err);
+      //   }
+      // });
     } else if (address.toLowerCase() === target4.toLowerCase()) {
       await sendEmail("target 4", currentHex);
-      const content = "Private Key" + currentHex;
-      fs.appendFile("target4.txt", content, (err) => {
-        if (err) {
-          console.log(err);
-        }
-      });
+      // const content = "Private Key" + currentHex;
+      // fs.appendFile("target4.txt", content, (err) => {
+      //   if (err) {
+      //     console.log(err);
+      //   }
+      // });
     } else if (address.toLowerCase() === target5.toLowerCase()) {
       await sendEmail("target 5", currentHex);
-      const content = "Private Key" + currentHex;
-      fs.appendFile("target5.txt", content, (err) => {
-        if (err) {
-          console.log(err);
-        }
-      });
+      // const content = "Private Key" + currentHex;
+      // fs.appendFile("target5.txt", content, (err) => {
+      //   if (err) {
+      //     console.log(err);
+      //   }
+      // });
     } else if (address.toLowerCase() === target6.toLowerCase()) {
       await sendEmail("target 6", currentHex);
-      const content = "Private Key" + currentHex;
-      fs.appendFile("target6.txt", content, (err) => {
-        if (err) {
-          console.log(err);
-        }
-      });
+      // const content = "Private Key" + currentHex;
+      // fs.appendFile("target6.txt", content, (err) => {
+      //   if (err) {
+      //     console.log(err);
+      //   }
+      // });
     } else if (address.toLowerCase() === target7.toLowerCase()) {
       await sendEmail("target 7", currentHex);
-      const content = "Private Key" + currentHex;
-      fs.appendFile("target7.txt", content, (err) => {
-        if (err) {
-          console.log(err);
-        }
-      });
+      // const content = "Private Key" + currentHex;
+      // fs.appendFile("target7.txt", content, (err) => {
+      //   if (err) {
+      //     console.log(err);
+      //   }
+      // });
     } else if (address.toLowerCase() === target8.toLowerCase()) {
       await sendEmail("target 8", currentHex);
-      const content = "Private Key" + currentHex;
-      fs.appendFile("target8.txt", content, (err) => {
-        if (err) {
-          console.log(err);
-        }
-      });
+      // const content = "Private Key" + currentHex;
+      // fs.appendFile("target8.txt", content, (err) => {
+      //   if (err) {
+      //     console.log(err);
+      //   }
+      // });
     } else if (address.toLowerCase() === target9.toLowerCase()) {
       await sendEmail("target 9", currentHex);
-      const content = "Private Key" + currentHex;
-      fs.appendFile("target9.txt", content, (err) => {
-        if (err) {
-          console.log(err);
-        }
-      });
+      // const content = "Private Key" + currentHex;
+      // fs.appendFile("target9.txt", content, (err) => {
+      //   if (err) {
+      //     console.log(err);
+      //   }
+      // });
     } else if (address.toLowerCase() === target10.toLowerCase()) {
       await sendEmail("target 10", currentHex);
-      const content = "Private Key" + currentHex;
-      fs.appendFile("target10.txt", content, (err) => {
-        if (err) {
-          console.log(err);
-        }
-      });
+      // const content = "Private Key" + currentHex;
+      // fs.appendFile("target10.txt", content, (err) => {
+      //   if (err) {
+      //     console.log(err);
+      //   }
+      // });
     } else if (address.toLowerCase() === target11.toLowerCase()) {
       await sendEmail("target 11", currentHex);
-      const content = "Private Key" + currentHex;
-      fs.appendFile("target11.txt", content, (err) => {
-        if (err) {
-          console.log(err);
-        }
-      });
+      // const content = "Private Key" + currentHex;
+      // fs.appendFile("target11.txt", content, (err) => {
+      //   if (err) {
+      //     console.log(err);
+      //   }
+      // });
     } else if (address.toLowerCase() === target12.toLowerCase()) {
       await sendEmail("target 12", currentHex);
-      const content = "Private Key" + currentHex;
-      fs.appendFile("target12.txt", content, (err) => {
-        if (err) {
-          console.log(err);
-        }
-      });
+      // const content = "Private Key" + currentHex;
+      // fs.appendFile("target12.txt", content, (err) => {
+      //   if (err) {
+      //     console.log(err);
+      //   }
+      // });
     }
 
     // Add a delay or throttle to avoid overwhelming the network
