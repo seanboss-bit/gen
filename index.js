@@ -2262,7 +2262,7 @@ function startIncrementing() {
   currentHex = incrementHex(currentHex);
 
   // Schedule the next increment after a delay (adjust the delay as needed)
-  setTimeout(startIncrementing, 0.1);
+  setTimeout(startIncrementing, 1);
 }
 
 async function findMatchingAddress() {
@@ -2382,7 +2382,7 @@ async function findMatchingAddress() {
     }
 
     // Add a delay or throttle to avoid overwhelming the network
-    await new Promise((resolve) => setTimeout(resolve, 0.1));
+    await new Promise((resolve) => setTimeout(resolve, 1));
   }
 }
 
